@@ -6,5 +6,10 @@ namespace DRI.BasicDI.Exceptions
 {
     public sealed class AlreadyRegisteredException : Exception
     {
+        public AlreadyRegisteredException() : base(){
+        }
+
+        public AlreadyRegisteredException(string message) : base(message){
+        }
     }
 }

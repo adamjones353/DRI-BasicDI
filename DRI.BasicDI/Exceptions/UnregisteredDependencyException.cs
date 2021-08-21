@@ -6,5 +6,12 @@ namespace DRI.BasicDI.Exceptions
 {
     public sealed class UnregisteredDependencyException : Exception
     {
+        public UnregisteredDependencyException() : base()
+        {
+        }
+
+        public UnregisteredDependencyException(string message) : base(message)
+        {
+        }
     }
 }
